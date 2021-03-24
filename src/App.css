@@ -1,0 +1,298 @@
+html {
+  font-family: "Varela Round", sans-serif;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.ProfilePic {
+  height: auto;
+  width: 55px;
+}
+
+#page {
+  z-index: 1;
+}
+
+#mobileMenu {
+  justify-content: center;
+  height: 85vh;
+  display: none;
+  text-align: center;
+  flex-direction: column;
+  background-color: black;
+}
+
+#mobileMenu div {
+  padding: 2rem 0;
+}
+
+#mobileMenu div a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+.closeIcon {
+  height: 30px;
+  width: auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 1rem 0;
+  align-items: center;
+  height: 55px;
+}
+
+.Links {
+  display: flex;
+  justify-content: center;
+}
+
+.Links div {
+  padding: 0 1rem;
+}
+
+.Links a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  transition: 0.2s;
+  padding: 0.2rem;
+
+  border-radius: 10px;
+}
+
+.Links a:hover {
+  background-color: black;
+  color: white;
+  transition: 0.2s;
+  border-radius: 10px;
+}
+
+.Badge {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 45vh;
+  align-items: center;
+  margin: 1rem;
+}
+
+.BadgeInner {
+  text-align: center;
+  width: 200px;
+}
+
+.BadgeInner :first-child {
+  font-size: 32px;
+}
+
+.BadgeIcons {
+  width: 192px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.BadgeIcons img {
+  padding-top: 1rem;
+  height: 40px;
+  width: auto;
+
+  transition: 0.2s;
+}
+
+.Badge p {
+  padding-top: 0.5rem;
+  font-size: 20px;
+}
+
+.previousWorkContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 4rem 1.5rem;
+  flex-basis: auto;
+}
+
+.achorTitle {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  margin: 3rem 0;
+}
+
+.box {
+  margin: 1rem rem;
+  width: 350px;
+  height: auto;
+  text-align: center;
+}
+
+.previousWorkContainer a {
+  text-decoration: none;
+}
+
+.previousWorkContainer p {
+  font-size: 19px;
+}
+
+.Education_Heading {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.Education_Container {
+  display: flex;
+  flex-direction: column;
+}
+
+.UniContainer {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  font-size: 15px;
+  padding: 1rem 0;
+}
+
+.Degree {
+  font-weight: bold;
+  display: flex;
+}
+
+.ResumeContainer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: auto;
+}
+
+.Resume_Download {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.Resume_Download div {
+  margin: 1rem;
+  text-align: center;
+}
+
+.Resume_Download a {
+  color: black;
+  font-weight: bolder;
+  text-decoration: none;
+  padding: 0 0.4rem;
+}
+
+.Resume_Download img {
+  height: auto;
+  width: 30px;
+}
+
+.FooterHolder {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 70px;
+  align-items: center;
+  background-color: black;
+  margin-top: 3rem;
+}
+
+.Footer {
+  align-items: center;
+  width: 100vw;
+}
+
+.Footer a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  font-size: 15px;
+  border-radius: 10px;
+  transition: 0.2s;
+  padding: 0.5rem;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 15px;
+}
+
+.portfolioImage {
+  margin: 1rem 0;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px 2px rgba(184, 184, 184, 1);
+  transition: 0.2s;
+}
+
+@media screen and (min-width: 600px) {
+  .portfolioImage:hover {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2),
+      0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.2s;
+  }
+  .Education_Container {
+    margin: 0 30vw;
+  }
+  .BadgeIcons img:hover {
+    padding-top: 0.6rem;
+
+    width: auto;
+    transition: 0.2s;
+  }
+
+  .Footer a:hover {
+    color: white;
+    border: solid 3px white;
+    background-color: black;
+    transition: 0.2s;
+  }
+
+  .Hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Education_Container {
+    margin: 0 10%;
+  }
+  .UniContainer img {
+    width: 100px;
+  }
+
+  .Links {
+    display: none;
+  }
+
+  .Hamburger {
+    display: block;
+    height: 40px;
+    width: auto;
+  }
+}
